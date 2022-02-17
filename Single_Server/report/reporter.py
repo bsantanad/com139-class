@@ -4,30 +4,103 @@ from assets.status import Status
 # TODO: Create report of multiple executions
 
 
-def report_all_by_field_obj(my_objs: list, my_field: str, w_filter: bool = False, val: float = 0.0) -> None:
+def report_all_by_field_obj(my_objs: list, my_field: str, 
+                            w_filter: bool = False, val: float = 0.0) -> None:
+
+    # this will iterate thru all the report fields, waiting time etc
     print('\n === Report for %s field ===' % my_field)
+    total_cust = len(my_objs)
+    print(f'total number of customers {total_cust}')
+
     is_status = isinstance(getattr(my_objs[0], my_field), Status)
     if not is_status:
         max_time = get_max_obj(my_objs, my_field, w_filter, val)
         min_time = get_min_obj(my_objs, my_field, w_filter, val)
         print('Max %s: %5.3f by %s' %
-              (my_field, max_time, objects_as_str(get_matching_value_obj(my_objs, my_field, max_time))))
+            (
+                my_field, 
+                max_time, 
+                objects_as_str(
+                    get_matching_value_obj(my_objs, my_field, max_time)
+                )
+            )
+        )
         print('Min %s: %5.3f by %s' %
-              (my_field, min_time, objects_as_str(get_matching_value_obj(my_objs, my_field, min_time))))
-        print('Mean %s: %5.3f' % (my_field, get_mean_obj(my_objs, my_field, w_filter, val)))
-        print('Median %s: %5.3f' % (my_field, get_median_obj(my_objs, my_field, w_filter, val)))
+            (
+                my_field, 
+                min_time, 
+                objects_as_str(
+                    get_matching_value_obj(my_objs, my_field, min_time)
+                )
+            )
+        )
+        print('Mean %s: %5.3f' % 
+            (
+                my_field, 
+                get_mean_obj(my_objs, my_field, w_filter, val)
+            )
+        )
+        print('Median %s: %5.3f' % 
+            (
+                my_field, 
+                get_median_obj(my_objs, my_field, w_filter, val)
+            )
+        )
+
         try:
-            print('Mode %s: %5.3f' % (my_field, get_mode_obj(my_objs, my_field, w_filter, val)))
+            print('Mode %s: %5.3f' % 
+                (
+                    my_field, 
+                    get_mode_obj(my_objs, my_field, w_filter, val)
+                )
+            )
         except Exception:
             print('No mode found in data')
-        print('Stdev %s: %5.3f' % (my_field, get_stdev_obj(my_objs, my_field, w_filter, val)))
-        print('Variance %s: %5.3f' % (my_field, get_variance_obj(my_objs, my_field, w_filter, val)))
-        # TODO: Calculate the percentage of minimal value
+
+        print('Stdev %s: %5.3f' % 
+            (
+                my_field, 
+                get_stdev_obj(my_objs, my_field, w_filter, val)
+            )
+        )
+        print('Variance %s: %5.3f' % 
+            (
+                my_field, 
+                get_variance_obj(my_objs, my_field, w_filter, val)
+            )
+        )
+        print('Variance %s: %5.3f' % 
+            (
+                my_field, 
+                get_variance_obj(my_objs, my_field, w_filter, val)
+            )
+        )
+
+        min_time = get_min_obj(my_objs, my_field, w_filter, val)
+        min_customers = get_matching_value_obj(my_objs, my_field, min_time)
+        percentage = len(min_customers) / total_cust
+        print(f'Percentage of Min Value {my_field}: {percentage}')
+
         # TODO: Group std dev customers and display the list
     else:
         print(is_status)
-        values = get_map_values(my_objs, my_field)
-        print(values)
+        statuses = get_map_values(my_objs, my_field)
+        success = []
+        failed = []
+        for status in statuses:
+            status = str(status)
+            if status == 'SUCCESS':
+                success.append(success)        
+            if status == 'RENEGED':
+                failed.append(success)        
+            if status == 'UNDEFINED':
+                continue
+            if status == 'WAIT':
+                continue
+        print(f'success customers: {len(success)}')
+        print(f'failed customers: {len(failed)}')
+        print(f'success rate: {len(success)/len(statuses)}')
+
         # TODO: get a histogram count on every status
         # TODO: graph the histogram
         # TODO: get success rate
