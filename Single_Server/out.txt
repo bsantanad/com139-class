@@ -1,0 +1,141 @@
+Bank Renege
+Total simulation time:  187.503
+Customer 00 | SUCCESS | Arrived:   0.000  Left:   3.216 ==> Total time:  3.216 |  -- NO WAIT -- | Serve time:  3.216 
+Customer 01 | SUCCESS | Arrived:   3.060  Left:  14.352 ==> Total time: 11.292 |  -- NO WAIT -- | Serve time: 11.292 
+Customer 02 | SUCCESS | Arrived:   3.818  Left:   9.298 ==> Total time:  5.480 |  -- NO WAIT -- | Serve time:  5.480 
+Customer 03 | SUCCESS | Arrived:  10.500  Left:  17.539 ==> Total time:  7.039 |  -- NO WAIT -- | Serve time:  7.039 
+Customer 04 | SUCCESS | Arrived:  10.591  Left:  21.085 ==> Total time: 10.495 |  -- NO WAIT -- | Serve time: 10.495 
+Customer 05 | RENEGED | Arrived:  10.671  Left:  12.553 ==> Total time:  1.882 | Waited:  1.882 | 
+Customer 06 | SUCCESS | Arrived:  13.033  Left:  14.417 ==> Total time:  1.384 | Waited:  1.319 | Serve time:  0.065 
+Customer 07 | SUCCESS | Arrived:  15.703  Left:  19.862 ==> Total time:  4.159 |  -- NO WAIT -- | Serve time:  4.159 
+Customer 08 | SUCCESS | Arrived:  20.620  Left:  24.723 ==> Total time:  4.104 |  -- NO WAIT -- | Serve time:  4.104 
+Customer 09 | SUCCESS | Arrived:  21.127  Left:  39.932 ==> Total time: 18.806 |  -- NO WAIT -- | Serve time: 18.806 
+Customer 10 | SUCCESS | Arrived:  21.419  Left:  34.502 ==> Total time: 13.083 |  -- NO WAIT -- | Serve time: 13.083 
+Customer 11 | SUCCESS | Arrived:  24.195  Left:  29.480 ==> Total time:  5.285 | Waited:  0.528 | Serve time:  4.757 
+Customer 12 | SUCCESS | Arrived:  26.501  Left:  38.092 ==> Total time: 11.592 | Waited:  2.979 | Serve time:  8.612 
+Customer 13 | RENEGED | Arrived:  28.910  Left:  33.357 ==> Total time:  4.447 | Waited:  4.447 | 
+Customer 14 | RENEGED | Arrived:  31.801  Left:  32.984 ==> Total time:  1.183 | Waited:  1.183 | 
+Customer 15 | SUCCESS | Arrived:  35.459  Left:  36.290 ==> Total time:  0.832 |  -- NO WAIT -- | Serve time:  0.832 
+Customer 16 | SUCCESS | Arrived:  36.235  Left:  39.547 ==> Total time:  3.313 | Waited:  0.056 | Serve time:  3.257 
+Customer 17 | SUCCESS | Arrived:  37.030  Left:  42.715 ==> Total time:  5.686 | Waited:  1.062 | Serve time:  4.623 
+Customer 18 | SUCCESS | Arrived:  40.059  Left:  67.650 ==> Total time: 27.592 |  -- NO WAIT -- | Serve time: 27.592 
+Customer 19 | SUCCESS | Arrived:  40.764  Left:  42.641 ==> Total time:  1.877 |  -- NO WAIT -- | Serve time:  1.877 
+Customer 20 | SUCCESS | Arrived:  43.897  Left:  48.668 ==> Total time:  4.772 |  -- NO WAIT -- | Serve time:  4.772 
+Customer 21 | SUCCESS | Arrived:  47.815  Left:  55.956 ==> Total time:  8.141 |  -- NO WAIT -- | Serve time:  8.141 
+Customer 22 | SUCCESS | Arrived:  61.491  Left:  76.452 ==> Total time: 14.961 |  -- NO WAIT -- | Serve time: 14.961 
+Customer 23 | SUCCESS | Arrived:  64.953  Left:  68.743 ==> Total time:  3.790 |  -- NO WAIT -- | Serve time:  3.790 
+Customer 24 | RENEGED | Arrived:  65.733  Left:  67.577 ==> Total time:  1.844 | Waited:  1.844 | 
+Customer 25 | SUCCESS | Arrived:  66.668  Left:  71.429 ==> Total time:  4.761 | Waited:  0.982 | Serve time:  3.779 
+Customer 26 | SUCCESS | Arrived:  75.257  Left:  99.855 ==> Total time: 24.598 |  -- NO WAIT -- | Serve time: 24.598 
+Customer 27 | SUCCESS | Arrived:  78.454  Left:  81.286 ==> Total time:  2.832 |  -- NO WAIT -- | Serve time:  2.832 
+Customer 28 | SUCCESS | Arrived:  80.296  Left:  89.081 ==> Total time:  8.785 |  -- NO WAIT -- | Serve time:  8.785 
+Customer 29 | SUCCESS | Arrived:  82.768  Left:  85.244 ==> Total time:  2.476 |  -- NO WAIT -- | Serve time:  2.476 
+Customer 30 | SUCCESS | Arrived:  89.612  Left:  90.565 ==> Total time:  0.953 |  -- NO WAIT -- | Serve time:  0.953 
+Customer 31 | SUCCESS | Arrived: 107.631  Left: 117.505 ==> Total time:  9.874 |  -- NO WAIT -- | Serve time:  9.874 
+Customer 32 | SUCCESS | Arrived: 107.776  Left: 108.433 ==> Total time:  0.656 |  -- NO WAIT -- | Serve time:  0.656 
+Customer 33 | SUCCESS | Arrived: 112.488  Left: 120.019 ==> Total time:  7.531 |  -- NO WAIT -- | Serve time:  7.531 
+Customer 34 | SUCCESS | Arrived: 113.930  Left: 114.045 ==> Total time:  0.115 |  -- NO WAIT -- | Serve time:  0.115 
+Customer 35 | SUCCESS | Arrived: 124.559  Left: 132.259 ==> Total time:  7.700 |  -- NO WAIT -- | Serve time:  7.700 
+Customer 36 | SUCCESS | Arrived: 128.386  Left: 129.569 ==> Total time:  1.183 |  -- NO WAIT -- | Serve time:  1.183 
+Customer 37 | SUCCESS | Arrived: 129.317  Left: 160.068 ==> Total time: 30.751 |  -- NO WAIT -- | Serve time: 30.751 
+Customer 38 | SUCCESS | Arrived: 131.029  Left: 137.972 ==> Total time:  6.943 |  -- NO WAIT -- | Serve time:  6.943 
+Customer 39 | SUCCESS | Arrived: 137.288  Left: 157.730 ==> Total time: 20.442 |  -- NO WAIT -- | Serve time: 20.442 
+Customer 40 | SUCCESS | Arrived: 137.878  Left: 147.362 ==> Total time:  9.484 | Waited:  0.094 | Serve time:  9.390 
+Customer 41 | RENEGED | Arrived: 138.941  Left: 142.991 ==> Total time:  4.050 | Waited:  4.050 | 
+Customer 42 | RENEGED | Arrived: 139.439  Left: 143.553 ==> Total time:  4.115 | Waited:  4.115 | 
+Customer 43 | RENEGED | Arrived: 141.765  Left: 142.767 ==> Total time:  1.002 | Waited:  1.002 | 
+Customer 44 | RENEGED | Arrived: 144.032  Left: 145.110 ==> Total time:  1.078 | Waited:  1.078 | 
+Customer 45 | SUCCESS | Arrived: 145.207  Left: 165.180 ==> Total time: 19.972 | Waited:  2.154 | Serve time: 17.818 
+Customer 46 | RENEGED | Arrived: 153.147  Left: 154.378 ==> Total time:  1.232 | Waited:  1.232 | 
+Customer 47 | SUCCESS | Arrived: 154.249  Left: 158.625 ==> Total time:  4.376 | Waited:  3.481 | Serve time:  0.895 
+Customer 48 | SUCCESS | Arrived: 160.560  Left: 174.857 ==> Total time: 14.296 |  -- NO WAIT -- | Serve time: 14.296 
+Customer 49 | SUCCESS | Arrived: 162.557  Left: 169.006 ==> Total time:  6.449 |  -- NO WAIT -- | Serve time:  6.449 
+Customer 50 | SUCCESS | Arrived: 166.912  Left: 187.503 ==> Total time: 20.591 |  -- NO WAIT -- | Serve time: 20.591 
+Customer 51 | SUCCESS | Arrived: 169.306  Left: 177.056 ==> Total time:  7.750 |  -- NO WAIT -- | Serve time:  7.750 
+Customer 52 | RENEGED | Arrived: 170.957  Left: 172.761 ==> Total time:  1.805 | Waited:  1.805 | 
+Customer 53 | SUCCESS | Arrived: 174.884  Left: 185.379 ==> Total time: 10.495 |  -- NO WAIT -- | Serve time: 10.495 
+Customer 54 | SUCCESS | Arrived: 176.005  Left: 178.346 ==> Total time:  2.341 | Waited:  1.052 | Serve time:  1.290 
+Customer 55 | SUCCESS | Arrived: 177.734  Left: 187.221 ==> Total time:  9.487 | Waited:  0.612 | Serve time:  8.875 
+Customer 56 | RENEGED | Arrived: 178.498  Left: 180.378 ==> Total time:  1.881 | Waited:  1.881 | 
+Customer 57 | RENEGED | Arrived: 179.282  Left: 182.807 ==> Total time:  3.524 | Waited:  3.524 | 
+Customer 58 | RENEGED | Arrived: 179.503  Left: 184.125 ==> Total time:  4.622 | Waited:  4.622 | 
+Customer 59 | RENEGED | Arrived: 180.283  Left: 181.566 ==> Total time:  1.283 | Waited:  1.283 | 
+
+ === Report for wait field ===
+total number of customers 60
+Max wait: 4.622 by ['Customer 58']
+Min wait: 0.000 by ['Customer 00', 'Customer 01', 'Customer 02', 'Customer 03', 'Customer 04', 'Customer 07', 'Customer 08', 'Customer 09', 'Customer 10', 'Customer 15', 'Customer 18', 'Customer 19', 'Customer 20', 'Customer 21', 'Customer 22', 'Customer 23', 'Customer 26', 'Customer 27', 'Customer 28', 'Customer 29', 'Customer 30', 'Customer 31', 'Customer 32', 'Customer 33', 'Customer 34', 'Customer 35', 'Customer 36', 'Customer 37', 'Customer 38', 'Customer 39', 'Customer 48', 'Customer 49', 'Customer 50', 'Customer 51', 'Customer 53']
+Mean wait: 0.804
+Median wait: 0.000
+Mode wait: 0.000
+Stdev wait: 1.300
+Variance wait: 1.691
+Variance wait: 1.691
+Percentage of Min Value wait: 58.333333333333336
+
+ === Report for total_time field ===
+total number of customers 60
+Max total_time: 30.751 by ['Customer 37']
+Min total_time: 0.115 by ['Customer 34']
+Mean total_time: 7.261
+Median total_time: 4.691
+No mode found in data
+Stdev total_time: 7.036
+Variance total_time: 49.510
+Variance total_time: 49.510
+Percentage of Min Value total_time: 1.6666666666666667
+
+ === Report for serving_time field ===
+total number of customers 60
+Max serving_time: 30.751 by ['Customer 37']
+Min serving_time: 0.065 by ['Customer 06']
+Mean serving_time: 8.422
+Median serving_time: 6.991
+No mode found in data
+Stdev serving_time: 7.470
+Variance serving_time: 55.797
+Variance serving_time: 55.797
+Percentage of Min Value serving_time: 1.6666666666666667
+
+ === Report for status field ===
+total number of customers 60
+True
+success customers: 46
+failed customers: 14
+undefined customers: 0
+wait customers: 0
+success rate: 0.7666666666666667
+
+ === Report for Service resource ===
+Max queue: 3.000
+
+ === Service === 
+0 ::  12.316
+1 ::  39.473
+2 ::  59.197
+3 ::  76.517
+
+ === Service === 
+0 ::   6.568
+1 ::  21.052
+2 ::  31.571
+3 ::  40.809
+Total:  100.00 %
+
+ === Report for Queue resource ===
+Max queue: 4.000
+
+ === Queue === 
+0 :: 152.267
+1 ::  25.368
+2 ::   6.803
+3 ::   2.970
+4 ::   0.095
+
+ === Queue === 
+0 ::  81.208
+1 ::  13.529
+2 ::   3.628
+3 ::   1.584
+4 ::   0.051
+Total:  100.00 %

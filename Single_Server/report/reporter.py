@@ -1,6 +1,9 @@
 from analysis.analyzer import *
 from simulation.config import *
 from assets.status import Status
+
+import matplotlib.pyplot  as plt
+
 # TODO: Create report of multiple executions
 
 
@@ -78,32 +81,44 @@ def report_all_by_field_obj(my_objs: list, my_field: str,
 
         min_time = get_min_obj(my_objs, my_field, w_filter, val)
         min_customers = get_matching_value_obj(my_objs, my_field, min_time)
-        percentage = len(min_customers) / total_cust
+        percentage = (len(min_customers) / total_cust) * 100
         print(f'Percentage of Min Value {my_field}: {percentage}')
 
         # TODO: Group std dev customers and display the list
     else:
         print(is_status)
         statuses = get_map_values(my_objs, my_field)
-        success = []
-        failed = []
+
+        success = 0
+        failed = 0
+        undefined = 0
+        wait = 0
+
         for status in statuses:
             status = str(status)
             if status == 'SUCCESS':
-                success.append(success)        
+                success += 1
             if status == 'RENEGED':
-                failed.append(success)        
+                failed += 1
             if status == 'UNDEFINED':
-                continue
+                undefined += 1
             if status == 'WAIT':
-                continue
-        print(f'success customers: {len(success)}')
-        print(f'failed customers: {len(failed)}')
-        print(f'success rate: {len(success)/len(statuses)}')
+                wait += 1
 
-        # TODO: get a histogram count on every status
-        # TODO: graph the histogram
-        # TODO: get success rate
+        # histogram data
+        print(f'success customers: {success}')
+        print(f'failed customers: {failed}')
+        print(f'undefined customers: {undefined}')
+        print(f'wait customers: {wait}')
+
+        # graph histogram
+        plt.bar([1, 2, 3, 4], height = [undefined, success, failed, wait])
+        plt.ylabel('customers')
+        plt.xlabel('undefined - success - failed -- wait')
+        plt.show()
+
+        # success rate 
+        print(f'success rate: {success/len(statuses)}')
 
 
 def report_all_by_ts(my_ts: list, my_label: str, total_time: float) -> None:

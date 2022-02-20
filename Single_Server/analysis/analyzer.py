@@ -45,7 +45,7 @@ def plot_ts(my_list: list, total_time: float, my_label: str = '', x_label: str =
 
     plt.plot(list(map(plot_x, my_list)), list(map(plot_y, my_list)))
     plt.scatter(list(map(plot_x, my_list)), list(map(plot_y, my_list)))
-    plt.show()
+    #plt.show()
 
 
 def hist_bar_ts(my_list: list, my_field: str, my_label: str = '', x_label: str = '',
@@ -69,12 +69,12 @@ def hist_bar_ts(my_list: list, my_field: str, my_label: str = '', x_label: str =
     ax.set_ylim(0, math.ceil(max(hist[0]) * 1.2))
     # Align properly the label for the bins
     bin_w = (max(bins) - min(bins)) / (len(bins) - 1)
-    plt.xticks(np.arange(min(bins) + bin_w / 2, max(bins), bin_w), bins)
-    plt.xlim(bins[0], bins[-1])
+    #plt.xticks(np.arange(min(bins) + bin_w / 2, max(bins), bin_w), bins)
+    #plt.xlim(bins[0], bins[-1])
     # Set the labels on top of the bars
-    for i in range(len(bins)-1):
-        plt.text(hist[1][i] + ((min(bins) + bin_w / 2) * 0.9),  0.15 + hist[0][i], str(int(hist[0][i])))
-    plt.show()
+    #for i in range(len(bins)-1):
+        #plt.text(hist[1][i] + ((min(bins) + bin_w / 2) * 0.9),  0.15 + hist[0][i], str(int(hist[0][i])))
+    #plt.show()
 
 
 def evolution_bar_ts(my_list: list, total_time: float, my_label: str = '',
@@ -132,7 +132,7 @@ def evolution_bar_ts(my_list: list, total_time: float, my_label: str = '',
     plt.scatter(x_values, y_values, s=15, color='orange', zorder=3, label='Change points')
 
     ax.legend()
-    plt.show()
+    #plt.show()
 
 
 def cumulative_time_ts(my_list: list, total_time: float, my_label: str = '',
@@ -150,7 +150,7 @@ def cumulative_time_ts(values: dict, my_label: str = '', x_label: str = '', y_la
 
     bars = plt.bar(values.keys(), values.values())
     autolabel(bars, ax)
-    plt.show()
+    #plt.show()
 
 
 def get_cumulative_time_ts(my_list: list, total_time: float) -> dict:

@@ -1,0 +1,97 @@
+Bank Renege
+Total simulation time:   67.650
+Customer 00 | SUCCESS | Arrived:   0.000  Left:   3.216 ==> Total time:  3.216 |  -- NO WAIT -- | Serve time:  3.216 
+Customer 01 | SUCCESS | Arrived:   3.060  Left:  14.352 ==> Total time: 11.292 |  -- NO WAIT -- | Serve time: 11.292 
+Customer 02 | SUCCESS | Arrived:   3.818  Left:   9.298 ==> Total time:  5.480 |  -- NO WAIT -- | Serve time:  5.480 
+Customer 03 | SUCCESS | Arrived:  10.500  Left:  17.539 ==> Total time:  7.039 |  -- NO WAIT -- | Serve time:  7.039 
+Customer 04 | SUCCESS | Arrived:  10.591  Left:  21.085 ==> Total time: 10.495 |  -- NO WAIT -- | Serve time: 10.495 
+Customer 05 | RENEGED | Arrived:  10.671  Left:  12.553 ==> Total time:  1.882 | Waited:  1.882 | 
+Customer 06 | SUCCESS | Arrived:  13.033  Left:  14.417 ==> Total time:  1.384 | Waited:  1.319 | Serve time:  0.065 
+Customer 07 | SUCCESS | Arrived:  15.703  Left:  19.862 ==> Total time:  4.159 |  -- NO WAIT -- | Serve time:  4.159 
+Customer 08 | SUCCESS | Arrived:  20.620  Left:  24.723 ==> Total time:  4.104 |  -- NO WAIT -- | Serve time:  4.104 
+Customer 09 | SUCCESS | Arrived:  21.127  Left:  39.932 ==> Total time: 18.806 |  -- NO WAIT -- | Serve time: 18.806 
+Customer 10 | SUCCESS | Arrived:  21.419  Left:  34.502 ==> Total time: 13.083 |  -- NO WAIT -- | Serve time: 13.083 
+Customer 11 | SUCCESS | Arrived:  24.195  Left:  29.480 ==> Total time:  5.285 | Waited:  0.528 | Serve time:  4.757 
+Customer 12 | SUCCESS | Arrived:  26.501  Left:  38.092 ==> Total time: 11.592 | Waited:  2.979 | Serve time:  8.612 
+Customer 13 | RENEGED | Arrived:  28.910  Left:  33.357 ==> Total time:  4.447 | Waited:  4.447 | 
+Customer 14 | RENEGED | Arrived:  31.801  Left:  32.984 ==> Total time:  1.183 | Waited:  1.183 | 
+Customer 15 | SUCCESS | Arrived:  35.459  Left:  36.290 ==> Total time:  0.832 |  -- NO WAIT -- | Serve time:  0.832 
+Customer 16 | SUCCESS | Arrived:  36.235  Left:  39.547 ==> Total time:  3.313 | Waited:  0.056 | Serve time:  3.257 
+Customer 17 | SUCCESS | Arrived:  37.030  Left:  42.715 ==> Total time:  5.686 | Waited:  1.062 | Serve time:  4.623 
+Customer 18 | SUCCESS | Arrived:  40.059  Left:  67.650 ==> Total time: 27.592 |  -- NO WAIT -- | Serve time: 27.592 
+Customer 19 | SUCCESS | Arrived:  40.764  Left:  42.641 ==> Total time:  1.877 |  -- NO WAIT -- | Serve time:  1.877 
+
+ === Report for wait field ===
+total number of customers 20
+Max wait: 4.447 by ['Customer 13']
+Min wait: 0.000 by ['Customer 00', 'Customer 01', 'Customer 02', 'Customer 03', 'Customer 04', 'Customer 07', 'Customer 08', 'Customer 09', 'Customer 10', 'Customer 15', 'Customer 18', 'Customer 19']
+Mean wait: 0.673
+Median wait: 0.000
+Mode wait: 0.000
+Stdev wait: 1.207
+Variance wait: 1.457
+Variance wait: 1.457
+Percentage of Min Value wait: 60.0
+
+ === Report for total_time field ===
+total number of customers 20
+Max total_time: 27.592 by ['Customer 18']
+Min total_time: 0.832 by ['Customer 15']
+Mean total_time: 7.137
+Median total_time: 4.866
+No mode found in data
+Stdev total_time: 6.749
+Variance total_time: 45.551
+Variance total_time: 45.551
+Percentage of Min Value total_time: 5.0
+
+ === Report for serving_time field ===
+total number of customers 20
+Max serving_time: 27.592 by ['Customer 18']
+Min serving_time: 0.065 by ['Customer 06']
+Mean serving_time: 7.605
+Median serving_time: 4.757
+No mode found in data
+Stdev serving_time: 7.060
+Variance serving_time: 49.848
+Variance serving_time: 49.848
+Percentage of Min Value serving_time: 5.0
+
+ === Report for status field ===
+total number of customers 20
+True
+success customers: 17
+failed customers: 3
+undefined customers: 0
+wait customers: 0
+success rate: 0.85
+
+ === Report for Service resource ===
+Max queue: 3.000
+
+ === Service === 
+0 ::   0.000
+1 ::  30.724
+2 ::  12.214
+3 ::  24.712
+
+ === Service === 
+0 ::   0.000
+1 ::  45.416
+2 ::  18.055
+3 ::  36.529
+Total:  100.00 %
+
+ === Report for Queue resource ===
+Max queue: 2.000
+
+ === Queue === 
+0 ::  55.948
+1 ::   9.949
+2 ::   1.754
+
+ === Queue === 
+0 ::  82.702
+1 ::  14.706
+2 ::   2.592
+Total:  100.00 %

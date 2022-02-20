@@ -1,0 +1,85 @@
+Bank Renege
+Total simulation time:   39.932
+Customer 00 | SUCCESS | Arrived:   0.000  Left:   3.216 ==> Total time:  3.216 |  -- NO WAIT -- | Serve time:  3.216 
+Customer 01 | SUCCESS | Arrived:   3.060  Left:  14.352 ==> Total time: 11.292 |  -- NO WAIT -- | Serve time: 11.292 
+Customer 02 | SUCCESS | Arrived:   3.818  Left:   9.298 ==> Total time:  5.480 |  -- NO WAIT -- | Serve time:  5.480 
+Customer 03 | SUCCESS | Arrived:  10.500  Left:  17.539 ==> Total time:  7.039 |  -- NO WAIT -- | Serve time:  7.039 
+Customer 04 | SUCCESS | Arrived:  10.591  Left:  21.085 ==> Total time: 10.495 |  -- NO WAIT -- | Serve time: 10.495 
+Customer 05 | RENEGED | Arrived:  10.671  Left:  12.553 ==> Total time:  1.882 | Waited:  1.882 | 
+Customer 06 | SUCCESS | Arrived:  13.033  Left:  14.417 ==> Total time:  1.384 | Waited:  1.319 | Serve time:  0.065 
+Customer 07 | SUCCESS | Arrived:  15.703  Left:  19.862 ==> Total time:  4.159 |  -- NO WAIT -- | Serve time:  4.159 
+Customer 08 | SUCCESS | Arrived:  20.620  Left:  24.723 ==> Total time:  4.104 |  -- NO WAIT -- | Serve time:  4.104 
+Customer 09 | SUCCESS | Arrived:  21.127  Left:  39.932 ==> Total time: 18.806 |  -- NO WAIT -- | Serve time: 18.806 
+
+ === Report for wait field ===
+total number of customers 10
+Max wait: 1.882 by ['Customer 05']
+Min wait: 0.000 by ['Customer 00', 'Customer 01', 'Customer 02', 'Customer 03', 'Customer 04', 'Customer 07', 'Customer 08', 'Customer 09']
+Mean wait: 0.320
+Median wait: 0.000
+Mode wait: 0.000
+Stdev wait: 0.688
+Variance wait: 0.473
+Variance wait: 0.473
+Percentage of Min Value wait: 80.0
+
+ === Report for total_time field ===
+total number of customers 10
+Max total_time: 18.806 by ['Customer 09']
+Min total_time: 1.384 by ['Customer 06']
+Mean total_time: 6.786
+Median total_time: 4.820
+No mode found in data
+Stdev total_time: 5.379
+Variance total_time: 28.930
+Variance total_time: 28.930
+Percentage of Min Value total_time: 10.0
+
+ === Report for serving_time field ===
+total number of customers 10
+Max serving_time: 18.806 by ['Customer 09']
+Min serving_time: 0.065 by ['Customer 06']
+Mean serving_time: 7.184
+Median serving_time: 5.480
+No mode found in data
+Stdev serving_time: 5.600
+Variance serving_time: 31.360
+Variance serving_time: 31.360
+Percentage of Min Value serving_time: 10.0
+
+ === Report for status field ===
+total number of customers 10
+True
+success customers: 9
+failed customers: 1
+undefined customers: 0
+wait customers: 0
+success rate: 0.9
+
+ === Report for Service resource ===
+Max queue: 3.000
+
+ === Service === 
+0 ::   0.000
+1 ::  20.871
+2 ::  13.398
+3 ::   5.663
+
+ === Service === 
+0 ::   0.000
+1 ::  52.266
+2 ::  33.552
+3 ::  14.181
+Total:  100.00 %
+
+ === Report for Queue resource ===
+Max queue: 1.000
+
+ === Queue === 
+0 ::  36.732
+1 ::   3.200
+
+ === Queue === 
+0 ::  91.985
+1 ::   8.015
+Total:  100.00 %
