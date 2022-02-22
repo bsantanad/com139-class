@@ -244,13 +244,52 @@ def count_shapes(grid, iteration):
         total += count
 
     report = {
+        'block': 0,
+        'beehive': 0,
+        'loaf': 0,
+        'boat': 0,
+        'tub': 0,
+
+        # oscilators, and spaceships
         'blinker': 0,
         'toad': 0,
         'beacon': 0,
         'glider': 0,
-        'lt-spaceship': 0,
+        'lw-spaceship': 0,
     }
+
+    # group last items
     for shape, count in totals.items():
+        if shape.startswith('block'):
+            report['block'] += count
+            continue
+        if shape.startswith('beehive'):
+            report['beehive'] += count
+            continue
+        if shape.startswith('loaf'):
+            report['loaf'] += count
+            continue
+        if shape.startswith('boat'):
+            report['boat'] += count
+            continue
+
+        if shape.startswith('blinker'):
+            report['blinker'] += count
+            continue
+        if shape.startswith('toad'):
+            report['toad'] += count
+            continue
+        if shape.startswith('beacon'):
+            report['beacon'] += count
+            continue
+        if shape.startswith('glider'):
+            report['glider'] += count
+            continue
+        if shape.startswith('lw-spaceship'):
+            report['lw-spaceship'] += count
+            continue
+
+    for shape, count in report.items():
         print(f'{shape} total: {count} - {(count/total) * 100:.2f} %')
 
     print(f'total number of shapes: {total}')
