@@ -101,7 +101,18 @@ if you want to run store it in a file you could do (unix systems):
 ```
 ./conway.py -f 1.in > out
 ```
-
+### how to read it
+after the
+```
+------------------------
+```
+it will tell you the number of iteration, and then all the shapes
+the first numer next to the shape is the number of shapes in the sim,
+the number to the right is the percentage that shape has regarding all
+found shapes, so:
+```
+name: number - percentage %
+```
 
 
 If you want to store the report on a file in Windows systems, please refer
