@@ -13,10 +13,6 @@ ON = 255
 OFF = 0
 vals = [ON, OFF]
 
-def random_grid(N):
-    """returns a grid of NxN random values"""
-    return np.random.choice(vals, N*N, p=[0.2, 0.8]).reshape(N, N)
-
 def main():
     # Command line args are in sys.argv[1], sys.argv[2] ..
     # sys.argv[0] is the script name itself and can be ignored
@@ -37,8 +33,8 @@ def main():
         if int(args.N) < 8:
             raise argparse.ArgumentTypeError('min grid is 8x8')
         N = int(args.N)
-
-
+    width = N
+    height = N
 
     # read file and parse the info
     coords = []
@@ -51,8 +47,9 @@ def main():
 
     grid = np.zeros((width, height))
 
-    if len(coords) < 0:
-        grid = random_grid(N)
+    print(len(coords))
+    if len(coords) == 0:
+        grid = np.random.choice(vals, N*N, p=[0.2, 0.8]).reshape(N, N)
 
     for x, y in coords:
         grid[x][y] = ON
@@ -133,6 +130,78 @@ def parse_lines(lines):
 
     return ((width, height), generations, coords)
 
+shapes = {
+    'block': [(1, 0), (0, 1), (1, 1)],
+    'beehive': [(0, 1), (1, -1), (1, 2), (2, 0), (2, 1)],
+    'loaf': [(0, 1), (1, -1), (1, 2), (2, 2), (3, 1)],
+}
+def count_shapes(grid, iteration):
+    '''
+    count current shapes in the grid
+
+    okay so this get's a little tricky so bear with me. We sum all the rows
+    and columns, if the sum is 0 we can skip until that row or column to
+    check the cells. This will save us iterating thru blank space.
+
+    Sadly this will only help us in the first iterations, becuase the cells
+    will soon grow to the end
+
+    Then we iterate thru the shapes we have, the shapes is a dict with
+    the name of the shape and the neighboors that need to be
+    alive to complete the shape, we save this in a dict
+    where the key is the name of the shape and the value is the
+    number of shapes in this iteration
+    '''
+    # get empty rows and cols
+    height = len(grid)
+    width = len(grid[0])
+    nonempty_rows = []
+    for i, line in enumerate(grid):
+        line_sum = np.sum(line) / 255
+        if line_sum != 0:
+            nonempty_rows.append(i)
+
+    tmp = np.sum(grid, axis = 0) / 255
+    nonempty_cols = []
+    for i, num in enumerate(tmp):
+        if num != 0:
+            nonempty_cols.append(i)
+
+    start_row = 0
+    finish_row = len(grid[0])
+    if len(nonempty_rows) > 0:
+        start_row = nonempty_rows[0]
+        finish_row = nonempty_rows[-1]
+
+    start_col = 0
+    finish_col = len(grid)
+    if len(nonempty_cols) > 0:
+        start_col = nonempty_cols[0]
+        finish_col = nonempty_cols[-1]
+
+    # iterate thru shapes and check for neighbors
+    totals = {}
+    for shape, _ in shapes.items():
+        totals[shape] = 0
+    print('---')
+    print(f'iteration {iteration}')
+    blocks = 0
+    beehive = 0
+    for shape, neighbors in shapes.items():
+        i += 1
+        for i in range(start_row, finish_row):
+            for j in range(start_col, finish_col):
+                tmp = 0
+                if grid[i][j] == 0:
+                    continue
+                for units in neighbors:
+                    if i + units[0] >= width or j + units[1] >= height:
+                        break
+                    if grid[i + units[0]][j + units[1]] != 0:
+                        tmp += 1
+                    if tmp == len(neighbors):
+                        totals[shape] += 1
+    print(totals)
 
 class anim_c:
     max_iterations = 200
@@ -188,6 +257,7 @@ class anim_c:
                     if total == 3:
                         new_grid[i, j] = ON
 
+        count_shapes(grid, self.iterations)
         # update data
         img.set_data(new_grid)
         grid[:] = new_grid[:]
