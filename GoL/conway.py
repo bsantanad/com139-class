@@ -47,7 +47,6 @@ def main():
 
     grid = np.zeros((width, height))
 
-    print(len(coords))
     if len(coords) == 0:
         grid = np.random.choice(vals, N*N, p=[0.2, 0.8]).reshape(N, N)
 
@@ -131,9 +130,47 @@ def parse_lines(lines):
     return ((width, height), generations, coords)
 
 shapes = {
+    # still lifes
     'block': [(1, 0), (0, 1), (1, 1)],
     'beehive': [(0, 1), (1, -1), (1, 2), (2, 0), (2, 1)],
     'loaf': [(0, 1), (1, -1), (1, 2), (2, 2), (3, 1)],
+    'boat': [(0, 1), (2, 0), (1, 2), (2, 1)],
+    'tub': [(1, -1), (1, 1), (2, 0)],
+
+    # oscilators
+    'blinker_a': [(1, 0), (2, 0)],
+    'blinker_b': [(0, 1), (0, 2)],
+
+    'toad_a': [(1, -2), (1, 1), (2, -2), (2, 1), (3, -1)],
+    'toad_b': [(0, 1), (0, 2), (1, -1), (1, 0), (1, 1)],
+
+    'beacon_a': [(1, 0), (0, 1), (1, 1), (2, 2), (2, 3), (3, 2), (3, 3)],
+    'beacon_b': [(1, 0), (0, 1), (2, 3), (3, 2), (3, 3)],
+
+    # spaceships
+    'glider_a': [(1, 1), (2, -1), (2, 0), (2, 1)],
+    'glider_b': [(0, 3), (1, 1), (1, 2), (2, 1)],
+    'glider_c': [(1, -2), (1, 0), (2, -1), (2, 0)],
+    'glider_d': [(1, 1), (1, 2), (2, 1), (2, 1)],
+
+    'lw_spaceship_a': [
+        (0, 3), (1, 4), (2, 0), (2, 4), (3, 1), (3, 2), (3, 3), (3, 4)
+    ],
+    'lw_spaceship_b': [
+        (0, 1), (1, -2), (1, -1), (1, 1), (1, 2),
+        (2, -2), (2, -1), (2, 0), (2, 1),
+        (3, -1), (3, 0),
+    ],
+    'lw_spaceship_c': [
+        (0, 1), (0, 2), (0, 3), (1, -1), (1, 3), (2, 3), (3, -1),
+        (3, 2),
+    ],
+    'lw_spaceship_d': [
+        (0, 1), (1, -2), (1, -1), (1, 0), (1, 1), (1, 2),
+        (2, -2), (2, -1), (2, 3), (2, 4),
+        (3, 0), (3, 1), (3, 2),
+    ],
+
 }
 def count_shapes(grid, iteration):
     '''
@@ -183,7 +220,7 @@ def count_shapes(grid, iteration):
     totals = {}
     for shape, _ in shapes.items():
         totals[shape] = 0
-    print('---')
+    print('------------------------')
     print(f'iteration {iteration}')
     blocks = 0
     beehive = 0
@@ -201,7 +238,22 @@ def count_shapes(grid, iteration):
                         tmp += 1
                     if tmp == len(neighbors):
                         totals[shape] += 1
-    print(totals)
+
+    total = 0
+    for _, count in totals.items():
+        total += count
+
+    report = {
+        'blinker': 0,
+        'toad': 0,
+        'beacon': 0,
+        'glider': 0,
+        'lt-spaceship': 0,
+    }
+    for shape, count in totals.items():
+        print(f'{shape} total: {count} - {(count/total) * 100:.2f} %')
+
+    print(f'total number of shapes: {total}')
 
 class anim_c:
     max_iterations = 200
