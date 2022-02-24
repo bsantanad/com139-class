@@ -290,6 +290,9 @@ def count_shapes(grid, iteration):
             continue
 
     for shape, count in report.items():
+        if total == 0:
+            print(f'{shape} total: {count} - {(0) * 100:.2f} %')
+            continue
         print(f'{shape} total: {count} - {(count/total) * 100:.2f} %')
 
     print(f'total number of shapes: {total}')
