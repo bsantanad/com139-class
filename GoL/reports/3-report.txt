@@ -1,0 +1,1261 @@
+------------------------
+iteration 1
+block total: 0 - 0.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 66.67 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 33.33 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 3
+------------------------
+iteration 2
+block total: 3 - 21.43 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 5 - 35.71 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 14.29 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 14
+------------------------
+iteration 3
+block total: 0 - 0.00 %
+beehive total: 1 - 20.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 20.00 %
+tub total: 0 - 0.00 %
+blinker total: 3 - 60.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 5
+------------------------
+iteration 4
+block total: 2 - 22.22 %
+beehive total: 1 - 11.11 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 11.11 %
+tub total: 0 - 0.00 %
+blinker total: 3 - 33.33 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 11.11 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 9
+------------------------
+iteration 5
+block total: 0 - 0.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 100.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 4
+------------------------
+iteration 6
+block total: 1 - 16.67 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 3 - 50.00 %
+toad total: 2 - 33.33 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 6
+------------------------
+iteration 7
+block total: 6 - 33.33 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 6 - 33.33 %
+toad total: 4 - 22.22 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 11.11 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 18
+------------------------
+iteration 8
+block total: 1 - 14.29 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 6 - 85.71 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 7
+------------------------
+iteration 9
+block total: 8 - 13.11 %
+beehive total: 0 - 0.00 %
+loaf total: 2 - 3.28 %
+boat total: 4 - 6.56 %
+tub total: 0 - 0.00 %
+blinker total: 23 - 37.70 %
+toad total: 4 - 6.56 %
+beacon total: 6 - 9.84 %
+glider total: 11 - 18.03 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 61
+------------------------
+iteration 10
+block total: 1 - 10.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 8 - 80.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 10
+------------------------
+iteration 11
+block total: 12 - 15.58 %
+beehive total: 0 - 0.00 %
+loaf total: 1 - 1.30 %
+boat total: 1 - 1.30 %
+tub total: 0 - 0.00 %
+blinker total: 34 - 44.16 %
+toad total: 3 - 3.90 %
+beacon total: 6 - 7.79 %
+glider total: 15 - 19.48 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 77
+------------------------
+iteration 12
+block total: 1 - 9.09 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 8 - 72.73 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 13
+block total: 10 - 24.39 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 2.44 %
+tub total: 0 - 0.00 %
+blinker total: 18 - 43.90 %
+toad total: 2 - 4.88 %
+beacon total: 0 - 0.00 %
+glider total: 4 - 9.76 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 41
+------------------------
+iteration 14
+block total: 1 - 9.09 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 8 - 72.73 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 15
+block total: 4 - 11.76 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 18 - 52.94 %
+toad total: 2 - 5.88 %
+beacon total: 0 - 0.00 %
+glider total: 4 - 11.76 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 34
+------------------------
+iteration 16
+block total: 2 - 10.53 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 14 - 73.68 %
+toad total: 1 - 5.26 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 10.53 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 19
+------------------------
+iteration 17
+block total: 4 - 12.90 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 12 - 38.71 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 6 - 19.35 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 31
+------------------------
+iteration 18
+block total: 1 - 10.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 7 - 70.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 10
+------------------------
+iteration 19
+block total: 3 - 20.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 6.67 %
+tub total: 0 - 0.00 %
+blinker total: 7 - 46.67 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 3 - 20.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 15
+------------------------
+iteration 20
+block total: 1 - 7.69 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 11 - 84.62 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 7.69 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 13
+------------------------
+iteration 21
+block total: 2 - 14.29 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 11 - 78.57 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 7.14 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 14
+------------------------
+iteration 22
+block total: 5 - 55.56 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 44.44 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 9
+------------------------
+iteration 23
+block total: 3 - 25.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 9 - 75.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 12
+------------------------
+iteration 24
+block total: 1 - 16.67 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 5 - 83.33 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 6
+------------------------
+iteration 25
+block total: 11 - 16.18 %
+beehive total: 2 - 2.94 %
+loaf total: 0 - 0.00 %
+boat total: 3 - 4.41 %
+tub total: 0 - 0.00 %
+blinker total: 25 - 36.76 %
+toad total: 8 - 11.76 %
+beacon total: 2 - 2.94 %
+glider total: 13 - 19.12 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 68
+------------------------
+iteration 26
+block total: 1 - 11.11 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 7 - 77.78 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 11.11 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 9
+------------------------
+iteration 27
+block total: 7 - 21.88 %
+beehive total: 1 - 3.12 %
+loaf total: 0 - 0.00 %
+boat total: 2 - 6.25 %
+tub total: 0 - 0.00 %
+blinker total: 16 - 50.00 %
+toad total: 2 - 6.25 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 6.25 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 32
+------------------------
+iteration 28
+block total: 1 - 10.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 9 - 90.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 10
+------------------------
+iteration 29
+block total: 1 - 25.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 3 - 75.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 4
+------------------------
+iteration 30
+block total: 3 - 25.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 9 - 75.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 12
+------------------------
+iteration 31
+block total: 6 - 26.09 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 4.35 %
+tub total: 0 - 0.00 %
+blinker total: 12 - 52.17 %
+toad total: 2 - 8.70 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 8.70 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 23
+------------------------
+iteration 32
+block total: 7 - 38.89 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 10 - 55.56 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 5.56 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 18
+------------------------
+iteration 33
+block total: 4 - 40.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 6 - 60.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 10
+------------------------
+iteration 34
+block total: 7 - 29.17 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 15 - 62.50 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 4.17 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 24
+------------------------
+iteration 35
+block total: 6 - 40.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 8 - 53.33 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 6.67 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 15
+------------------------
+iteration 36
+block total: 6 - 31.58 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 5.26 %
+tub total: 0 - 0.00 %
+blinker total: 8 - 42.11 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 10.53 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 19
+------------------------
+iteration 37
+block total: 8 - 27.59 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 11 - 37.93 %
+toad total: 1 - 3.45 %
+beacon total: 0 - 0.00 %
+glider total: 5 - 17.24 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 29
+------------------------
+iteration 38
+block total: 3 - 33.33 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 44.44 %
+toad total: 1 - 11.11 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 11.11 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 9
+------------------------
+iteration 39
+block total: 5 - 26.32 %
+beehive total: 0 - 0.00 %
+loaf total: 1 - 5.26 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 7 - 36.84 %
+toad total: 1 - 5.26 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 10.53 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 19
+------------------------
+iteration 40
+block total: 3 - 27.27 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 8 - 72.73 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 41
+block total: 8 - 20.51 %
+beehive total: 0 - 0.00 %
+loaf total: 2 - 5.13 %
+boat total: 1 - 2.56 %
+tub total: 0 - 0.00 %
+blinker total: 16 - 41.03 %
+toad total: 3 - 7.69 %
+beacon total: 1 - 2.56 %
+glider total: 3 - 7.69 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 39
+------------------------
+iteration 42
+block total: 3 - 20.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 12 - 80.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 15
+------------------------
+iteration 43
+block total: 2 - 11.76 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 15 - 88.24 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 17
+------------------------
+iteration 44
+block total: 8 - 42.11 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 9 - 47.37 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 10.53 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 19
+------------------------
+iteration 45
+block total: 4 - 28.57 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 7.14 %
+tub total: 0 - 0.00 %
+blinker total: 9 - 64.29 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 14
+------------------------
+iteration 46
+block total: 12 - 17.39 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 1.45 %
+tub total: 0 - 0.00 %
+blinker total: 31 - 44.93 %
+toad total: 2 - 2.90 %
+beacon total: 4 - 5.80 %
+glider total: 14 - 20.29 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 69
+------------------------
+iteration 47
+block total: 4 - 40.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 6 - 60.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 10
+------------------------
+iteration 48
+block total: 1 - 12.50 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 7 - 87.50 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 49
+block total: 7 - 31.82 %
+beehive total: 0 - 0.00 %
+loaf total: 1 - 4.55 %
+boat total: 1 - 4.55 %
+tub total: 0 - 0.00 %
+blinker total: 7 - 31.82 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 4 - 18.18 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 22
+------------------------
+iteration 50
+block total: 2 - 11.11 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 12 - 66.67 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 11.11 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 18
+------------------------
+iteration 51
+block total: 4 - 21.05 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 8 - 42.11 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 3 - 15.79 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 19
+------------------------
+iteration 52
+block total: 3 - 11.11 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 16 - 59.26 %
+toad total: 2 - 7.41 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 3.70 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 27
+------------------------
+iteration 53
+block total: 0 - 0.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 100.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 4
+------------------------
+iteration 54
+block total: 8 - 24.24 %
+beehive total: 0 - 0.00 %
+loaf total: 1 - 3.03 %
+boat total: 1 - 3.03 %
+tub total: 0 - 0.00 %
+blinker total: 13 - 39.39 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 6 - 18.18 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 33
+------------------------
+iteration 55
+block total: 7 - 41.18 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 6 - 35.29 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 11.76 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 17
+------------------------
+iteration 56
+block total: 8 - 40.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 5.00 %
+tub total: 0 - 0.00 %
+blinker total: 9 - 45.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 5.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 20
+------------------------
+iteration 57
+block total: 5 - 71.43 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 0 - 0.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 7
+------------------------
+iteration 58
+block total: 4 - 12.12 %
+beehive total: 2 - 6.06 %
+loaf total: 0 - 0.00 %
+boat total: 4 - 12.12 %
+tub total: 0 - 0.00 %
+blinker total: 16 - 48.48 %
+toad total: 2 - 6.06 %
+beacon total: 0 - 0.00 %
+glider total: 3 - 9.09 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 33
+------------------------
+iteration 59
+block total: 3 - 25.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 8 - 66.67 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 8.33 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 12
+------------------------
+iteration 60
+block total: 9 - 17.31 %
+beehive total: 3 - 5.77 %
+loaf total: 2 - 3.85 %
+boat total: 3 - 5.77 %
+tub total: 0 - 0.00 %
+blinker total: 21 - 40.38 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 10 - 19.23 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 52
+------------------------
+iteration 61
+block total: 7 - 25.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 19 - 67.86 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 2 - 7.14 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 28
+------------------------
+iteration 62
+block total: 10 - 11.90 %
+beehive total: 0 - 0.00 %
+loaf total: 1 - 1.19 %
+boat total: 3 - 3.57 %
+tub total: 0 - 0.00 %
+blinker total: 43 - 51.19 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 12 - 14.29 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 84
+------------------------
+iteration 63
+block total: 3 - 17.65 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 2 - 11.76 %
+tub total: 0 - 0.00 %
+blinker total: 12 - 70.59 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 17
+------------------------
+iteration 64
+block total: 9 - 21.43 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 2.38 %
+tub total: 0 - 0.00 %
+blinker total: 24 - 57.14 %
+toad total: 1 - 2.38 %
+beacon total: 0 - 0.00 %
+glider total: 5 - 11.90 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 42
+------------------------
+iteration 65
+block total: 4 - 36.36 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 7 - 63.64 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 66
+block total: 4 - 30.77 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 9 - 69.23 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 13
+------------------------
+iteration 67
+block total: 11 - 26.83 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 1 - 2.44 %
+tub total: 0 - 0.00 %
+blinker total: 17 - 41.46 %
+toad total: 1 - 2.44 %
+beacon total: 1 - 2.44 %
+glider total: 8 - 19.51 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 41
+------------------------
+iteration 68
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 50.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 69
+block total: 9 - 37.50 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 9 - 37.50 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 4 - 16.67 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 24
+------------------------
+iteration 70
+block total: 6 - 54.55 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 1 - 9.09 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 71
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 72
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 73
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 74
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 75
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 76
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 77
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 78
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 79
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 80
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 81
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 82
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 83
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 84
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 85
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 86
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 87
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 88
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 89
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 90
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 91
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 92
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 93
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 94
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 95
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
+------------------------
+iteration 96
+block total: 5 - 45.45 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 4 - 36.36 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 11
+------------------------
+iteration 97
+block total: 4 - 50.00 %
+beehive total: 0 - 0.00 %
+loaf total: 0 - 0.00 %
+boat total: 0 - 0.00 %
+tub total: 0 - 0.00 %
+blinker total: 2 - 25.00 %
+toad total: 0 - 0.00 %
+beacon total: 0 - 0.00 %
+glider total: 0 - 0.00 %
+lw-spaceship total: 0 - 0.00 %
+total number of shapes: 8
