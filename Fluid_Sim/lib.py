@@ -54,9 +54,10 @@ def parse_conf(lines):
                     tmp = ((a, b, c, d), value)
                     density.append(tmp)
                 except ValueError:
-                    logging.error(f'bad syntax in conf file, line {line_num},'
-                                  ' skipping line.')
-                continue
+                    logger.warning(f'bad syntax in conf file, line {line_num}'
+                                    ' maybe in the denisty part? skipping'
+                                    ' line')
+                    continue
             if switch == 'velocity':
                 try:
                     position, value = line.split(':')
@@ -65,9 +66,10 @@ def parse_conf(lines):
                     tmp = ((a, b), (c, d))
                     velocity.append(tmp)
                 except ValueError:
-                    logging.error(f'bad syntax in conf file, line {line_num},'
-                                  ' skipping line.')
-                continue
+                    logger.warning(f'bad syntax in conf file, line {line_num}'
+                                    ' maybe in the velocity part? skipping'
+                                    ' line.')
+                    continue
 
         if line.startswith('color'):
             try:
@@ -79,3 +81,39 @@ def parse_conf(lines):
             continue
 
     return density, velocity, color
+
+class custom_formater_c(logging.Formatter):
+    '''
+    add color to logger, just copy and pasted from:
+    https://stackoverflow.com/a/56944256
+    '''
+
+    grey = "\x1b[38;20m"
+    yellow = "\x1b[33;20m"
+    red = "\x1b[31;20m"
+    bold_red = "\x1b[31;1m"
+    reset = "\x1b[0m"
+    format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s (%(filename)s:%(lineno)d)"
+
+    FORMATS = {
+        logging.DEBUG: grey + format + reset,
+        logging.INFO: grey + format + reset,
+        logging.WARNING: yellow + format + reset,
+        logging.ERROR: red + format + reset,
+        logging.CRITICAL: bold_red + format + reset
+    }
+    def format(self, record):
+        log_fmt = self.FORMATS.get(record.levelno)
+        formatter = logging.Formatter(log_fmt)
+        return formatter.format(record)
+
+logger = logging.getLogger('fluid')
+logger.setLevel(logging.DEBUG)
+
+# create console handler with a higher log level
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+
+ch.setFormatter(custom_formater_c())
+
+logger.addHandler(ch)

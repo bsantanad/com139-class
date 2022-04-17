@@ -1,12 +1,40 @@
+#!/usr/bin/env python3
 """
-Based on the Jos Stam paper https://www.researchgate.net/publication/2560062_Real-Time_Fluid_Dynamics_for_Games
-and the mike ash vulgarization https://mikeash.com/pyblog/fluid-simulation-for-dummies.html
+Based on the Jos Stam paper
+https://www.researchgate.net/publication/2560062_Real-Time_Fluid_Dynamics_for_Games
+and the mike ash vulgarization
+https://mikeash.com/pyblog/fluid-simulation-for-dummies.html
 
 https://github.com/Guilouf/python_realtime_fluidsim
 """
 import numpy as np
+import argparse
 import math
+import logging
 
+import lib
+
+parser = argparse.ArgumentParser(
+    description = "fluid simulation based on the Jos Stam paper"
+)
+
+parser.add_argument(
+    '-f', '--file',
+    dest = 'file', required = True,
+    help = 'configuration file for the simulation'
+)
+
+args = parser.parse_args()
+logger = logging.getLogger('fluid')
+logger.setLevel(logging.DEBUG)
+
+# create console handler with a higher log level
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+
+ch.setFormatter(lib.custom_formater_c())
+
+logger.addHandler(ch)
 
 class Fluid:
 
@@ -23,14 +51,33 @@ class Fluid:
         self.diff = 0.0000  # Diffusion
         self.visc = 0.0000  # viscosity
 
-        self.s = np.full((self.size, self.size), 0, dtype=float)        # Previous density
-        self.density = np.full((self.size, self.size), 0, dtype=float)  # Current density
+        # Previous densityA
+        self.s = np.full(
+            (self.size, self.size), 0, dtype=float,
+        )
+        # Current density
+        self.density = np.full(
+            (self.size, self.size), 0, dtype=float,
+        )
 
         # array of 2d vectors, [x, y]
-        self.velo = np.full((self.size, self.size, 2), 0, dtype=float)
-        self.velo0 = np.full((self.size, self.size, 2), 0, dtype=float)
+        self.velo = np.full(
+            (self.size, self.size, 2), 0, dtype=float
+        )
+        self.velo0 = np.full(
+            (self.size, self.size, 2), 0, dtype=float
+        )
 
     def step(self):
+        '''
+        now we can have a cube step on the sim,
+        - it diffuse all three velocites and components
+        - fix up velocoites so they keep things incompressible
+        - move the velocites around according to the velocites of the fluid
+        - fixes the velocites again lol
+        - diffuse the dye
+        - move the dye around according to the velocity
+        '''
         self.diffuse(self.velo0, self.velo, self.visc)
 
         # x0, y0, x, y
@@ -46,7 +93,10 @@ class Fluid:
         self.advect(self.density, self.s, self.velo)
 
     def lin_solve(self, x, x0, a, c):
-        """Implementation of the Gauss-Seidel relaxation"""
+        '''
+        solves some sort of linear differnetial equations, it is used in
+        diffuse and project hopefully we wont have to modify it
+        '''
         c_recip = 1 / c
 
         for iteration in range(0, self.iter):
@@ -56,10 +106,10 @@ class Fluid:
             self.set_boundaries(x)
 
     def set_boundaries(self, table):
-        """
-        Boundaries handling
+        '''
+        we need  walls in the boxes to make the simulation works better
         :return:
-        """
+        '''
 
         if len(table.shape) > 2:  # 3d velocity vector array
             # Simulating the bouncing effect of the velocity array
@@ -78,6 +128,11 @@ class Fluid:
                                               table[self.size - 1, self.size - 2]
 
     def diffuse(self, x, x0, diff):
+        '''
+        when you drop sauce in some still water it will spread out, this
+        function does that, it will also be used to make the velocities of the
+        fluid spread out
+        '''
         if diff != 0:
             a = self.dt * diff * (self.size - 2) * (self.size - 2)
             self.lin_solve(x, x0, a, 1 + 6 * a)
@@ -85,6 +140,12 @@ class Fluid:
             x[:, :] = x0[:, :]
 
     def project(self, velo_x, velo_y, p, div):
+        '''
+        since we are using just incompressible fluids (like water and unlike
+        air), the amount of fluid in each box must remain constat, this means
+        when we add the dye, the same amount of fluid must be taken out. this
+        operation runs thru the boxes and fixes them in equilibrium
+        '''
         # numpy equivalent to this in a for loop:
         # div[i, j] = -0.5 * (velo_x[i + 1, j] - velo_x[i - 1, j] + velo_y[i, j + 1] - velo_y[i, j - 1]) / self.size
         div[1:-1, 1:-1] = -0.5 * (
@@ -102,6 +163,10 @@ class Fluid:
         self.set_boundaries(self.velo)
 
     def advect(self, d, d0, velocity):
+        '''
+        every box has a set of velocites, and these velocites make things move
+        this is calles advection.
+        '''
         dtx = self.dt * (self.size - 2)
         dty = self.dt * (self.size - 2)
 
@@ -168,26 +233,61 @@ if __name__ == "__main__":
 
         inst = Fluid()
 
+        try:
+            with open(args.file, 'r') as f:
+                lines = f.readlines()
+        except FileNotFoundError:
+            logger.error('can not access file you sent, bailing out :)')
+            raise
+
+        densities, velocities, color = lib.parse_conf(lines)
+
         def update_im(i):
             # We add new density creators in here
-            inst.density[14:17, 14:17] += 100  # add density into a 3*3 square
+            for density in densities:
+                # add density into a n*n square
+                position, value = density
+                a, b, c, d = tuple(map(int, position))
+                value = int(value)
+                inst.density[a:b, c:d] += value
+
             # We add velocity vector values in here
-            inst.velo[20, 20] = [-2, -2]
+            for velocity in velocities:
+                # add density into a n*n square
+                position, value = velocity
+                a, b = tuple(map(int, position))
+                c, d = tuple(map(int, value))
+                inst.velo[a, b] = [c, d]
+
             inst.step()
             im.set_array(inst.density)
-            q.set_UVC(inst.velo[:, :, 1], inst.velo[:, :, 0])
+            q.set_UVC(inst.velo[:, :, 1], inst.velo[:, :, 0]) #TODO
             # print(f"Density sum: {inst.density.sum()}")
             im.autoscale()
 
         fig = plt.figure()
 
         # plot density
-        im = plt.imshow(inst.density, vmax=100, interpolation='bilinear')
+        try:
+            im = plt.imshow(
+                inst.density,
+                vmax=100,
+                interpolation='bilinear',
+                cmap=color
+            )
+        except ValueError:
+            logging.error('invalid color name, falling back to default')
+            im = plt.imshow(
+                inst.density,
+                vmax = 100,
+                interpolation = 'bilinear',
+            )
 
         # plot vector field
         q = plt.quiver(inst.velo[:, :, 1], inst.velo[:, :, 0], scale=10, angles='xy')
         anim = animation.FuncAnimation(fig, update_im, interval=0)
-        # anim.save("movie.mp4", fps=30, extra_args=['-vcodec', 'libx264'])
+        anim.save("movie.mp4", fps=30)# extra_args=['-vcodec', 'libx264'])
+        #anim.save("movie.mp4", fps=30, extra_args=['-vcodec', 'libx264'])
         plt.show()
 
     except ImportError:
