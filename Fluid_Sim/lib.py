@@ -31,6 +31,7 @@ def parse_conf(lines):
     color = None
     switch = False
     for i, line in enumerate(lines):
+        line_num = i + 1
         if line.startswith('#'): # we dont care of lines with comments
             continue
 
@@ -53,7 +54,7 @@ def parse_conf(lines):
                     tmp = ((a, b, c, d), value)
                     density.append(tmp)
                 except ValueError:
-                    logging.error(f'bad syntax in conf file, line {i},'
+                    logging.error(f'bad syntax in conf file, line {line_num},'
                                   ' skipping line.')
                 continue
             if switch == 'velocity':
@@ -64,7 +65,7 @@ def parse_conf(lines):
                     tmp = ((a, b), (c, d))
                     velocity.append(tmp)
                 except ValueError:
-                    logging.error(f'bad syntax in conf file, line {i},'
+                    logging.error(f'bad syntax in conf file, line {line_num},'
                                   ' skipping line.')
                 continue
 
@@ -72,14 +73,9 @@ def parse_conf(lines):
             try:
                 _, color = line.split()
             except ValueError:
-                logging.error(f'bad syntax in conf file, line {i}, falling'
-                              ' back to default color')
+                logging.error(f'bad syntax in conf file, line {line_num},'
+                              ' falling back to default color')
                 color = 'plasma'
             continue
 
     return density, velocity, color
-
-
-
-
-
