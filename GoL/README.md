@@ -114,7 +114,6 @@ found shapes, so:
 name: number - percentage %
 ```
 
-
 If you want to store the report on a file in Windows systems, please refer
 [here][msft]
 
