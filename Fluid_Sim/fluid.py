@@ -44,7 +44,7 @@ class Fluid:
         self.cntx = 1
         self.cnty = -1
 
-        self.size = 60  # map size
+        self.size = 100 # map size
         self.dt = 0.2  # time interval
         self.iter = 2  # linear equation solving iteration number
 
@@ -240,7 +240,7 @@ if __name__ == "__main__":
             logger.error('can not access file you sent, bailing out :)')
             raise
 
-        densities, velocities, color = lib.parse_conf(lines)
+        densities, velocities, objects, color = lib.parse_conf(lines)
 
         def update_im(i):
             # We add new density creators in here
@@ -259,9 +259,18 @@ if __name__ == "__main__":
                 c, d = tuple(map(int, value))
                 inst.velo[a, b] = [c, d]
 
+            for obj in objects:
+                # add density into a n*n square
+                start, end = obj
+                a, b = tuple(map(int, start))
+                c, d = tuple(map(int, end))
+                inst.velo[a:b, c:d] = 0
+                inst.density[a+1:b-1, c+1:d-1] += 100
+                #inst.density[41:44, 41:44] += 100
+
             inst.step()
             im.set_array(inst.density)
-            q.set_UVC(inst.velo[:, :, 1], inst.velo[:, :, 0]) #TODO
+            q.set_UVC(inst.velo[:, :, 1], inst.velo[:, :, 0]) # TODO
             # print(f"Density sum: {inst.density.sum()}")
             im.autoscale()
 
@@ -286,8 +295,7 @@ if __name__ == "__main__":
         # plot vector field
         q = plt.quiver(inst.velo[:, :, 1], inst.velo[:, :, 0], scale=10, angles='xy')
         anim = animation.FuncAnimation(fig, update_im, interval=0)
-        anim.save("movie.mp4", fps=30)# extra_args=['-vcodec', 'libx264'])
-        #anim.save("movie.mp4", fps=30, extra_args=['-vcodec', 'libx264'])
+        anim.save("movie.mp4", fps=30) # extra_args=['-vcodec', 'libx264'])
         plt.show()
 
     except ImportError:

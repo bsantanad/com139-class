@@ -28,6 +28,7 @@ def parse_conf(lines):
     lines[:] = [line.strip() for line in lines] # remove tabs and spaces
     density = []
     velocity = []
+    objects = []
     color = None
     switch = False
     for i, line in enumerate(lines):
@@ -41,6 +42,10 @@ def parse_conf(lines):
 
         if line.startswith('velocity'):
             switch = 'velocity'
+            continue
+
+        if line.startswith('object'):
+            switch = 'object'
             continue
 
         if switch: # we are inside the braces of density
@@ -71,6 +76,17 @@ def parse_conf(lines):
                                     ' line.')
                     continue
 
+            if switch == 'object':
+                try:
+                    a, b, c, d = line.split()
+                    tmp = ((a, b), (c, d))
+                    objects.append(tmp)
+                except ValueError:
+                    logger.warning(f'bad syntax in conf file, line {line_num}'
+                                    ' maybe in the objects part? skipping'
+                                    ' line.')
+                    continue
+
         if line.startswith('color'):
             try:
                 _, color = line.split()
@@ -80,7 +96,7 @@ def parse_conf(lines):
                 color = 'plasma'
             continue
 
-    return density, velocity, color
+    return density, velocity, objects, color
 
 class custom_formater_c(logging.Formatter):
     '''
