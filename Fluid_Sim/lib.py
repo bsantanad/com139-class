@@ -30,6 +30,7 @@ def parse_conf(lines):
     velocity = []
     objects = []
     color = None
+    force = None
     switch = False
     for i, line in enumerate(lines):
         line_num = i + 1
@@ -91,12 +92,21 @@ def parse_conf(lines):
             try:
                 _, color = line.split()
             except ValueError:
-                logging.error(f'bad syntax in conf file, line {line_num},'
+                logger.error(f'bad syntax in conf file, line {line_num},'
                               ' falling back to default color')
                 color = 'plasma'
             continue
 
-    return density, velocity, objects, color
+        if line.startswith('force'):
+            try:
+                _, force = line.split()
+            except ValueError:
+                logger.error(f'bad syntax in conf file, line {line_num},'
+                              ' falling back to none force')
+                force = None
+            continue
+
+    return density, velocity, objects, color, force
 
 class custom_formater_c(logging.Formatter):
     '''

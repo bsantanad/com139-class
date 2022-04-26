@@ -240,10 +240,17 @@ if __name__ == "__main__":
             logger.error('can not access file you sent, bailing out :)')
             raise
 
-        densities, velocities, objects, color = lib.parse_conf(lines)
+        densities, velocities, objects, color, force = lib.parse_conf(lines)
 
         def update_im(i):
             # We add new density creators in here
+            factor = 1, 1
+            if force:
+                if force == 'clockwise':
+                    factor = 1.5 * math.sin(i), 1.5 * math.cos(i)
+                if force == 'counterclockwise':
+                    factor = 1.5 * math.cos(i), 1.5 * math.sin(i)
+
             for density in densities:
                 # add density into a n*n square
                 position, value = density
@@ -257,7 +264,10 @@ if __name__ == "__main__":
                 position, value = velocity
                 a, b = tuple(map(int, position))
                 c, d = tuple(map(int, value))
-                inst.velo[a, b] = [c, d]
+                inst.velo[a, b] = [
+                    c * factor[0],
+                    d * factor[1],
+                ]
 
             for obj in objects:
                 # add density into a n*n square
@@ -270,6 +280,7 @@ if __name__ == "__main__":
 
             inst.step()
             im.set_array(inst.density)
+
             q.set_UVC(inst.velo[:, :, 1], inst.velo[:, :, 0]) # TODO
             # print(f"Density sum: {inst.density.sum()}")
             im.autoscale()
@@ -285,7 +296,7 @@ if __name__ == "__main__":
                 cmap=color
             )
         except ValueError:
-            logging.error('invalid color name, falling back to default')
+            logger.error('invalid color name, falling back to default')
             im = plt.imshow(
                 inst.density,
                 vmax = 100,
@@ -293,7 +304,13 @@ if __name__ == "__main__":
             )
 
         # plot vector field
-        q = plt.quiver(inst.velo[:, :, 1], inst.velo[:, :, 0], scale=10, angles='xy')
+        q = plt.quiver(
+            inst.velo[:, :, 1],
+            inst.velo[:, :, 0],
+            scale=10,
+            angles='xy'
+        )
+
         anim = animation.FuncAnimation(fig, update_im, interval=0)
         anim.save("movie.mp4", fps=30) # extra_args=['-vcodec', 'libx264'])
         plt.show()
