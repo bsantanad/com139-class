@@ -1,21 +1,17 @@
-================
-fluid simulation
-================
+# fluid simulation
 
 basic 2D fluid simulation based on mike ash post:
 https://mikeash.com/pyblog/fluid-simulation-for-dummies.html
 and https://github.com/Guilouf/python_realtime_fluidsim
 
-how it works
-============
+## how it works
 
 I'd recommend reading `notes.md` in this same repository, it will have
 the notes I took while trying to understand the code and while reading
 the blog post from mike ash, the text is not long and gives a good
 introduction on how all this will work.
 
-installation
-===========
+## installation
 
 well, you'll need python3 installed of course, then you can do:
 ```
@@ -25,8 +21,7 @@ NOTE: I'd strongly suggest that you run the pip install inside a virutalenv
 (https://docs.python.org/3/library/venv.html), this way you wont have to mess
 with numpys versions and all those things.
 
-usage
-=====
+## usage
 
 the usage is pretty straight forward, you can just run the file and send the
 config file
@@ -42,8 +37,8 @@ it is kind of important. The param is not optional, you must send a conf
 file with every run. If you just want to see it running, grab one of the files
 inside the `examples/` directory.
 
-the conf file
--------------
+### the conf file
+
 its pretty similar to conf files in BSD systems, like httpd.conf, I chose this
 format because it is really human readable and using json just felt kind of
 weird for this project in particular.
